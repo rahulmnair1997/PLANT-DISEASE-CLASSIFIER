@@ -1,4 +1,4 @@
-# ImageClassification-Server
+# Plant Disease Detector
 Image classification with Web API and UI.<br>
 It's is written in Django along with Tensorflow uing [Google's Inception v3 model]<br>
 The web interface is made using materializecss and jQuery<br>
