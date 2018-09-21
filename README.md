@@ -1,7 +1,7 @@
 # ImageClassification-Server
 Image classification with Web API and UI.<br>
-It's is written in Django along with Tensorflow uing [Google's Inception v3 model](https://storage.googleapis.com/download.tensorflow.org/models/inception_dec_2015.zip)<br>
-The web interface is made using [materializecss](http://materializecss.com/) and [jQuery](https://jquery.com/)<br>
+It's is written in Django along with Tensorflow uing [Google's Inception v3 model]<br>
+The web interface is made using materializecss and jQuery<br>
 It is extension of [this](https://github.com/DeepBlueCitzenService/Tensorflow-Server) project.
 
 ## Usage
@@ -14,20 +14,8 @@ $ python3 manage.py collectstatic
 $ python3 manage.py runserver
 ```
 
-## Web Interface
-The Web Interface can be found at [http://tf-classify.herokuapp.com](http://tf-classify.herokuapp.com)
-
-## Web API
-You can classify using web API by sending a POST request at [http://tf-classify.herokuapp.com/classify_image/classify/api/](http://tf-classify.herokuapp.com/classify_image/classify/api/)<br>
-
-#### Input
-Parameter | Type                           | Description
---------- | ------------------------------ | -----------------------------------------------------------------------------------
-image     | file                           | Image file that you want to classify.
-image64   | text                           | Image in base64 form that you want to classify. Currently supports JPEG images only
-k         | text<br>(optional, default=10) | Return top-k categories of the results. Must me string in integer format.
-
-Note: you need to send either 'image' or 'image64'
+### Input
+you need to send either 'image' or 'image64' of leaves of tomato since only this model has been currently been trained on tomato dataset. It can furthr be improved by trained it with more classes.
 
 #### Result
 Parameter    | Type                | Description
@@ -46,4 +34,4 @@ Example:  {"success": true, "confidence": {  "mongoose": 0.87896, "hare": 0.0012
 * Deploy the Django project
 
 ## Contribute
-I am just beginner. If you find any bugs or want to improve the project, fell free to do it uisng pull request.
+I am just beginner. If you find any bugs or want to improve the project, fell free to do it uisng pull request. And I have used various resources, even files from some github repositories, like image classify server, etc.
