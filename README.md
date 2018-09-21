@@ -14,7 +14,7 @@ $ python3 manage.py collectstatic
 $ python3 manage.py runserver
 ```
 
-### Input
+#### Input
 you need to send either 'image' or 'image64' of leaves of tomato since only this model has been currently been trained on tomato dataset. It can furthr be improved by trained it with more classes.
 
 #### Result
