@@ -2,7 +2,7 @@
 Image classification with Web API and UI.<br>
 It's is written in Django along with Tensorflow uing [Google's Inception v3 model]<br>
 The web interface is made using materializecss and jQuery<br>
-It is extension of [this](https://github.com/DeepBlueCitzenService/Tensorflow-Server) project.
+
 
 ## Usage
 
@@ -29,9 +29,6 @@ Example:  {"success": true, "confidence": {  "mongoose": 0.87896, "hare": 0.0012
 
 ## Using Retrained Inception Model
 * Retrain the model using your images. Refer [here](https://www.tensorflow.org/tutorials/image_retraining).
-* [Fork](https://github.com/CCD-1997/image-classify-server#fork-destination-box) this repo
 * Replace the generated graph and label files in `/classify_image/inception_model/`
 * Deploy the Django project
 
-## Contribute
-I am just beginner. If you find any bugs or want to improve the project, fell free to do it uisng pull request. And I have used various resources, even files from some github repositories, like image classify server, etc.
